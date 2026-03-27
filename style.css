@@ -1,0 +1,45 @@
+body {
+    background-color: #1a1a1a; /* Ciemne tło jak na Twitchu */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #a970ff; /* Fioletowy kolor Twitcha */
+}
+
+#setup {
+    background-color: #2d2d2d;
+    border-radius: 15px;
+    padding: 20px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}.twitch-button {
+    background-color: #9146ff; /* Kolor fioletowy Twitcha */
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+.twitch-button:hover {
+    background-color: #772ce8; /* Ciemniejszy fiolet po najechaniu myszką */
+}iframe {
+    border: 5px solid #9146ff; /* Fioletowa ramka Twitcha */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(145, 70, 255, 0.5); /* Efekt świecenia */
+    margin: 20px 0;
+}
