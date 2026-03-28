@@ -34,10 +34,9 @@ section {
     width: 90%;
     max-width: 800px;
     border: 1px solid #444;
-    box-sizing: border-box; /* Ważne, żeby padding nie rozpychał ramki */
+    box-sizing: border-box;
 }
 
-/* Styl dla okna video żeby było idealnie w ramce */
 .video-container {
     width: 100%;
     display: flex;
@@ -47,25 +46,4 @@ section {
 iframe {
     border: 2px solid #9146ff;
     border-radius: 10px;
-    width: 100%;
-    max-width: 740px; /* Dopasowane do wnętrza sekcji */
-    aspect-ratio: 16 / 9;
-}
-
-.twitch-button, .discord-button {
-    text-decoration: none;
-    color: white;
-    padding: 15px 35px;
-    border-radius: 50px;
-    font-weight: bold;
-    display: inline-block;
-    transition: 0.3s;
-    margin: 10px 0;
-}
-
-.twitch-button { background-color: #9146ff; box-shadow: 0 5px 15px rgba(145, 70, 255, 0.4); }
-.discord-button { background-color: #5865F2; box-shadow: 0 5px 15px rgba(88, 101, 242, 0.4); }
-
-.twitch-button:hover, .discord-button:hover { transform: scale(1.05); filter: brightness(1.2); }
-
-footer { margin: 40px 0; opacity: 0.6; }
+    width:
