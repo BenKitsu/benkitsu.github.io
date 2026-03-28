@@ -1,45 +1,74 @@
+/* Główne ustawienia tła z animacją kolorów */
 body {
-    background-color: #1a1a1a; /* Ciemne tło jak na Twitchu */
+    background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #2d1b4d, #1a1a1a);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
     color: #ffffff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #9146ff;
 }
 
 h1 {
-    color: #a970ff; /* Fioletowy kolor Twitcha */
+    font-size: 3rem;
+    color: #9146ff;
+    text-shadow: 0 0 15px rgba(145, 70, 255, 0.6);
 }
 
+/* Styl kafelków setupu */
 #setup {
-    background-color: #2d2d2d;
-    border-radius: 15px;
-    padding: 20px;
-    display: inline-block;
-    margin-top: 20px;
+    background: rgba(45, 45, 45, 0.8);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 600px;
+    border: 1px solid #444;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+#setup:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(145, 70, 255, 0.3);
+    border-color: #9146ff;
 }
 
-li {
-    margin: 10px 0;
-}.twitch-button {
-    background-color: #9146ff; /* Kolor fioletowy Twitcha */
+/* Przyciski */
+.twitch-button {
+    background-color: #9146ff;
     color: white;
-    padding: 15px 25px;
+    padding: 15px 35px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px;
     font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s;
     display: inline-block;
-    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(145, 70, 255, 0.4);
 }
+
 .twitch-button:hover {
-    background-color: #772ce8; /* Ciemniejszy fiolet po najechaniu myszką */
-}iframe {
-    border: 5px solid #9146ff; /* Fioletowa ramka Twitcha */
+    transform: scale(1.1);
+    background-color: #772ce8;
+    box-shadow: 0 8px 25px rgba(145, 70, 255, 0.6);
+}
+
+/* Odtwarzacz video */
+iframe {
+    border: 3px solid #9146ff;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(145, 70, 255, 0.5); /* Efekt świecenia */
-    margin: 20px 0;
+    max-width: 100%;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
 }
